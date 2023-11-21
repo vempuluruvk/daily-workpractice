@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .notification {
+      display: none;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Notification Example</h2>
+
+  <div class="notification" id="myNotification">
+    This is a notification message.
+  </div>
+
+  <button onclick="showNotification()">Show Notification</button>
+
+  <script>
+    function showNotification() {
+      var notification = document.getElementById('myNotification');
+      notification.style.display = 'block';
+
+      // Hide the notification after 3 seconds (3000 milliseconds)
+      setTimeout(function() {
+        notification.style.display = 'none';
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Item Cascader</title>
+  <style>
+    select {
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="category">Select Food Category:</label>
+  <select id="category" onchange="populateFoodItems()">
+    <option value="0">-- Select --</option>
+    <option value="biryani">Biryani</option>
+    <option value="starters">Starters</option>
+  </select>
+
+  <label for="foodItems">Select Food Item:</label>
+  <select id="foodItems">
+    <option value="0">-- Select Category First --</option>
+  </select>
+
+  <script>
+    function populateFoodItems() {
+      var categorySelect = document.getElementById("category");
+      var foodItemsSelect = document.getElementById("foodItems");
+
+    
+      foodItemsSelect.innerHTML = "<option value='0'>-- Select Food Item --</option>";
+
+      var selectedCategory = categorySelect.value;
+
+      if (selectedCategory === "biryani") {
+        addOption(foodItemsSelect, "Chicken Biryani");
+        addOption(foodItemsSelect, "Vegetable Biryani");
+        addOption(foodItemsSelect, "Mutton Biryani");
+      } else if (selectedCategory === "starters") {
+        addOption(foodItemsSelect, "Chicken Wings");
+        addOption(foodItemsSelect, "Vegetable Spring Rolls");
+        addOption(foodItemsSelect, "Paneer Tikka");
+      }
+    
+    }
+
+    function addOption(selectElement, optionText) {
+      var option = document.createElement("option");
+      option.text = optionText;
+      selectElement.add(option);
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    strong {
+      font-weight: bold;
+      color: #e44d26;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .lowercase {
+      text-transform: lowercase;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    .highlight {
+      background-color: #ffff66;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Website</h1>
+
+  <p>This is a sample paragraph with <a href="#" class="highlight">a highlighted link</a>.</p>
+
+  <p><strong>Strong text</strong> and <em>emphasized text</em> for emphasis.</p>
+
+  <p class="uppercase">This text is in uppercase.</p>
+  <p class="lowercase">This text is in lowercase.</p>
+  <p class="capitalize">This text is capitalized.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Layout</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Main Content</h2>
+    <p>This is the main content of the website.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Divider Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    hr {
+      border: 1px solid #ddd; /* Set the border color */
+      margin: 20px 0; /* Add some margin for spacing */
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>Main Content</h2>
+    <p>This is the main content of the website.</p>
+
+    <!-- Horizontal Divider -->
+    <hr>
+
+    <p>More content below the divider.</p>
+  </section>
+
+</body>
+</html>
