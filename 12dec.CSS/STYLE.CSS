@@ -1,0 +1,66 @@
+/* external css */
+/* H1{
+    font-size: 56px;
+    font-style: italic;
+    color: burlywood;
+}
+
+H2{
+    font-style: normal;
+    font-size: 25px;
+    background-color: blueviolet;
+    color: chocolate;
+}
+H3{
+    font-size: 42PX;
+    font-style: italic;
+    background-color: beige;
+    color: cadetblue;
+} */
+
+/* selectors:
+element selectors
+group selectors
+id selectors
+class selectors */
+
+
+                          /* element selectors */
+/* h1{
+    color: blue;
+    }
+p{
+    color:blueviolet;
+}
+h2{
+    color: brown;
+} */
+
+                          /* grouping selectors */
+
+/* body{
+    color: red;
+} 
+
+h1,h2,h4{
+    color: chartreuse;
+} */
+
+                               /* id selectors (#) */
+#title{
+    color: brown;
+}
+#h5footer{
+    color: chartreuse;
+    background-color: blueviolet;
+}
+
+/* class selectors (.) */
+
+.hi{
+    color:red;
+}
+.bye{
+    color: blueviolet;
+    background: lawngreen;
+}
