@@ -1,0 +1,42 @@
+/* div and span */
+div{
+    color: brown;
+}
+span{
+    text-transform: uppercase;
+    color: aqua;
+    text-decoration: double;
+    background-color: rebeccapurple;
+}
+#CONTAINER{
+    color: BLACK;
+}
+
+
+/* last rule,specificity,universal selector */
+
+/* lastrule:the latest one is ovderride  the previous one */
+h1{
+    color: blue;
+}
+h1{
+    color: brown;
+}
+
+/* specificity */
+
+/* when mouse hover the selector it shows specificity(id has more on class) */
+
+.oneclass{
+    color: aqua;
+}
+#oneid{
+    color: chartreuse;
+}
+
+/* universal selector: it applies the properties for all */
+
+*{
+    color: black;
+    margin: 0%;
+}
