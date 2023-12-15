@@ -1,0 +1,38 @@
+
+
+* {
+  margin: 0;;
+  padding: 0px;
+  box-sizing:content-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
+  }
+  .input-field {
+    position: relative;
+    height: 50px;
+    width: 280px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .input-field input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+  }
+  input::placeholder {
+    color: #b4b4b4;
+  }
+  
