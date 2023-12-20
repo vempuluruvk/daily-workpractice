@@ -1,0 +1,22 @@
+h1{
+    background: url("photo-1519865885898-a54a6f2c7eea.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    background-position-x: center;
+    background-position: left;
+    background-repeat: repeat-x;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+ div{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+ }
+
+ .one{
+background:linear-gradient(photo-1519865885898-a54a6f2c7eea);
+ }
