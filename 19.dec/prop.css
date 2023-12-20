@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li{
+    list-style-type: square;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: black;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px;
+    display: inline-block;
+}
